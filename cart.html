@@ -5,33 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
 
     <div>
-<table class="dicClassTable" >
-    <tr>
-      <th>Product</th>
-      <th>Price	</th>
-      <th>Quantity	</th>
-      <th>Total	</th>
-    </tr>
-    <tr>
-      <td>Alfreds Futterkiste</td>
-      <td>Maria Anders</td>
-      <td>Germany</td>
-    </tr>
-    <tr>
-      <td>Centro comercial Moctezuma</td>
-      <td>Francisco Chang</td>
-      <td>Mexico</td>
-    </tr>
-  </table>
-</div>
+      
+        <table class="dicClassTable" >
+            <tr>
+              <th>Product</th>
+              <th>Price	</th>
+              <th>Quantity	</th>
+              <th>Total	</th>
+            </tr>
+           
+            <tr>
+              
+              <td class="product">
+                  <div class="img">
+                      <img src="imgs/1.jpg">
+                </div>
+        
+                <div class="nameOfObject">
+                    <h6>BELT CAR ENGINE</h6>
+                </div>
+                <div class="deleteRow">
+        
+                </div>
+              </td>
+        
+              <td class="price" > <div class="moveMoney"> $ <span class="money" id="idPrice">10.00</span></div> </td>
+              <td class="quantaty">
+                <a href="#" class="moveMinus"><i class="fa fa-minus"></i></a>
+        
+                  <input type="text" class="moveInput" value="2" id="idQuantaty" readonly="">
+                  <a href="#" class="movePlus"> <i class="fa fa-plus"></i></a>
+                </td>
+                <td class="total">
+                    <div class="moveMoney">   $ <span class="money" id="idTotal">20.00</span></div>
+                </td>
+            </tr>
+           
+          </table>
+        </div>
 
-
+<br>
+<br>
+<br>
+<br>
     <div class="cartSection2">
         <div class="calculateShipping">
             <h5>CALCULATE SHIPPING :</h5>

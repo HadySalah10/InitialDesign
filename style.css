@@ -84,7 +84,65 @@
 
 }
 
+/****************************************************cart first section ********************************************************************/
+.dicClassTable{
+    position: relative;
+    left: 148px;
+}
+.dicClassTable tr td{
+    border:1px solid #e5e5e5;
 
+}
+.dicClassTable tr td.product {
+    border:1px solid #e5e5e5;
+    width: 419.71px;
+    padding: 7px;
+
+}
+.nameOfObject{
+ 
+
+    position: relative;
+    left: 139px;
+    margin: 0;
+    bottom: 73px;
+}
+table.dicClassTable th{
+    background-color: #f6f6f7;
+    border:1px solid #e5e5e5;
+
+}
+.nameOfObject h6{
+    margin: 0;
+    font-size: 16px;
+
+}
+.moveMoney{
+    position: relative;
+    left: 95px;
+    bottom: 10px;
+}
+.moveInput{
+    position: relative;
+
+    width: 10px;
+    left: 116px;    
+    bottom: 10px;
+}
+.price ,.quantaty,.total{
+    width:238px;
+}
+.movePlus{
+    position: relative;
+    left: 121px;
+    bottom: 7px;
+}
+.moveMinus{
+    position: relative;
+    bottom: 7px;
+    left: 113px;
+
+}
 /*************************************************** cart second section ***********************************************************/
 .cartSection2{
   width: 80%;
