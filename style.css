@@ -1,84 +1,86 @@
-/* navber style */
+/* navbar */
 .navbar
 {
-    height:30px;
-    cursor: pointer;
-}
-#home
-{
-    margin-left:400px;
-}
-.navbar ul
-{
-    list-style:none;
     display:flex;
     flex-direction:row;
+    cursor:pointer;
 }
-.navbar ul .navbar-list
+/* navbar list*/
+.navbar-list
 {
-margin:20px;
+    display:inline-block;
+    margin-left:30px;
+}
 
-}
-.navbar-list-dropdown
-{
-    display:none;
-    background-color:#EEE;
-    width:80px;
-}
-.navbar-list:hover .navbar-list-dropdown  
-{
-    display:block;  
-    margin-top:10px;    
-}
-.navbar-list-dropdown div {
-    margin:10px;
-    padding:10px;
-    text-decoration: none;
 
-}
-.navbar-list-dropdown div:hover{
-    color:red;
-}
-.navbar-list:hover
-{
-    text-decoration: overline;
-    text-decoration-color:red;
-
-}
-.dropdown-cart-box
-{
-width:250px;
-padding:15px;
-border:1px solid #EEE;
-display:none;
-}
-.dropdown-cart-box .cart-text
-{
-color:#EEE;
-font-size:20px;
-display:inline-block;
-margin:0px;
-}
-.first-button , .second-button
-{
-    width:200px;
+/* Dropdown span */
+.dropspan {
     font-size: 20px;
-    color:#fff;
-    border:none;
-    height:30px;
-    margin :0 20px;
-}
-.first-button 
-{
-    background-color: red;
-}
-.second-button
-{
-    background-color: #000;
-}
-.fa-cart-arrow-down:hover .dropdown-cart-box
-{
-    display:block;
-}
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content ,.rightOpened-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+ 
+  
+  /* Links inside the dropdown */
+  .dropdown-content a , .rightOpened-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+ /* Change color of dropdown links on hover */
+ .rightOpened-content a:hover {background-color: #ddd;}
 
+ /* Change color of right Opened links on hover */
+ .right-dropdown-content a:hover {display: block;}
+
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+
+ /* Show the right dropdown menu on hover */
+  .dropdown-content:hover .right-dropdown-content 
+  {
+  
+      float:right;
+  }
+  
+  /* Change the background color of the dropdown span when the dropdown content is shown */
+  .dropdown:hover .dropspan {
+      text-decoration: overline;
+      text-decoration-color: red;
+    }
+    /* home style */
+    .home {
+        margin-left:400px;
+        text-decoration: overline;
+        text-decoration-color: red;
+    }
+    .fa-chevron-right{
+        float:right;
+    }
+
+
+.second-footer-div ul{
+        list-style: none;
+    }
+    
 
