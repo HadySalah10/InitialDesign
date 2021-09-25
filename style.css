@@ -77,7 +77,7 @@
     .fa-chevron-right{
         float:right;
 
-
+    }
 /* tbles design   */
 .dicClassTable>tr>th {
     border:1px solid black;
@@ -85,27 +85,25 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /*************************************************** cart second section ***********************************************************/
 .cartSection2{
-  width: 90%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   margin: auto;
 }
 .calculateShipping{
-  
+  border: black 1px solid;
+  width: 45%;
 }
-
+.cartTolals{
+  border: black 1px solid;
+  width: 45%;
+  padding: 10px;
+}
+.cartTolals ul li span{
+  float: right;
+}
 
 /******************************************************************** footer *******************************************************/
 .second-footer-div ul{
