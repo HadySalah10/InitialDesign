@@ -1,1 +1,84 @@
+/* navber style */
+.navbar
+{
+    height:30px;
+    cursor: pointer;
+}
+#home
+{
+    margin-left:400px;
+}
+.navbar ul
+{
+    list-style:none;
+    display:flex;
+    flex-direction:row;
+}
+.navbar ul .navbar-list
+{
+margin:20px;
+
+}
+.navbar-list-dropdown
+{
+    display:none;
+    background-color:#EEE;
+    width:80px;
+}
+.navbar-list:hover .navbar-list-dropdown  
+{
+    display:block;  
+    margin-top:10px;    
+}
+.navbar-list-dropdown div {
+    margin:10px;
+    padding:10px;
+    text-decoration: none;
+
+}
+.navbar-list-dropdown div:hover{
+    color:red;
+}
+.navbar-list:hover
+{
+    text-decoration: overline;
+    text-decoration-color:red;
+
+}
+.dropdown-cart-box
+{
+width:250px;
+padding:15px;
+border:1px solid #EEE;
+display:none;
+}
+.dropdown-cart-box .cart-text
+{
+color:#EEE;
+font-size:20px;
+display:inline-block;
+margin:0px;
+}
+.first-button , .second-button
+{
+    width:200px;
+    font-size: 20px;
+    color:#fff;
+    border:none;
+    height:30px;
+    margin :0 20px;
+}
+.first-button 
+{
+    background-color: red;
+}
+.second-button
+{
+    background-color: #000;
+}
+.fa-cart-arrow-down:hover .dropdown-cart-box
+{
+    display:block;
+}
+
 
