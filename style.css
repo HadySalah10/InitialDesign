@@ -179,8 +179,9 @@
 /****************************************************cart first section ********************************************************************/
 .h1Change{
     position: relative;
-    left: 221px;
+    left: 80px;
     font-size: 52px;
+    width: 80%;
 }
 .page-title{
 background-color: #f6f6f6;
@@ -188,8 +189,7 @@ height: 114px;
 
 }
 .dicClassTable{
-    position: relative;
-    left: 148px;
+
 }
 .dicClassTable tr td{
     border:1px solid #e5e5e5;
