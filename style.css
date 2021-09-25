@@ -177,6 +177,16 @@
   }
 
 /****************************************************cart first section ********************************************************************/
+.h1Change{
+    position: relative;
+    left: 221px;
+    font-size: 52px;
+}
+.page-title{
+background-color: #f6f6f6;
+height: 114px;
+
+}
 .dicClassTable{
     position: relative;
     left: 148px;
@@ -234,6 +244,10 @@ table.dicClassTable th{
     bottom: 7px;
     left: 113px;
 
+}
+.TableContainer{
+    margin: auto;
+    width: 90%;
 }
 /*************************************************** cart second section ***********************************************************/
 .cartSection2{
