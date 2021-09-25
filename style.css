@@ -254,7 +254,7 @@ table.dicClassTable th{
   width: 90%;
   display: flex;
   justify-content: space-between;
-  margin: auto;
+  margin: 30px auto;
   
 }
 .calculateShipping{
