@@ -323,6 +323,167 @@ table.dicClassTable th{
   color: #777;
 
 }
+                                                                 /* body */
+
+ *
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding:0px;
+}
+.products
+{
+    font-family: 'Open Sans', sans-serif;
+    width:70%;
+    
+    margin:100px auto;
+    display:flex;
+    flex-wrap: wrap;
+    text-align:center;
+    justify-content: space-between;
+}
+
+.itemOne
+{
+    width:300px;
+    height:350px;
+    position: relative;
+    margin-bottom: 130px;
+}
+
+
+
+ .photo
+{
+    position: relative;
+
+}
+
+.photo-focus
+{
+    
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:300px;
+    height:350px;
+}
+.photo-hover
+{
+    position: absolute;
+    top:0px;
+    left:0px;
+     width:300px;
+    height:350px; 
+    opacity: 0;
+}
+.button
+{
+    margin-top: 100px;
+    background-color: rgb(148, 6, 6);
+    padding:10px;
+    margin:5px ;
+    border-radius: 5px;
+    color:rgb(231, 223, 223);
+    text-decoration: none;
+}
+.buttons
+{
+    position: absolute;
+    top: 259px;
+    left: 41px;
+}
+
+
+
+.product-bio
+{
+    position: absolute;
+    top: 357px;
+    left: 114px;
+    text-decoration: none;
+   
+}
+a{text-decoration: none;color:black}
+.product-cat{font-size: 13px; font-weight: lighter;}
+.product-title{text-transform: uppercase; font-weight: bolder;margin-top: 10px;font-size: larger;}
+.product-price{color: rgb(206, 10, 10);font-weight:bolder;}
+
+.photo-hover:hover
+{
+    opacity: 1;
+}
+
+
+.buttons:hover
+{
+    opacity: 1;
+}
+
+
+                                                         /* /* brands style */
+ .brands
+ {
+     width: 100%;
+     background-color: rgb(246, 228, 228);
+ }  
+ 
+ .brands-container
+ {
+     width:70%;
+     margin: 40px auto;
+     padding: 50px 0px ;
+
+     display: flex;
+     justify-content: space-between;
+
+ }
+
+ .brands-text{    width: 68%;}
+.brands-button
+ {  width: 186px;
+    margin-top: 37px;
+}
+
+
+ .brands-logo
+ {
+    width: 77%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 80px;
+    opacity: 0.7;
+ }
+
+ .brands-logo:hover
+ {
+     opacity: 1;
+ }
+
+
+                                          /* offers */
+.offers
+{
+    margin-top: 50px;
+    width:100%;
+}
+
+.offers-container
+{
+    width:70%;
+    margin: auto;
+}
+
+.special-offer
+{
+    display: flex;
+    width: 24%;
+    padding:20px 0px;
+    border-bottom: 1px solid grey ;
+}
+
+                                                              
 
 /******************************************************************** footer *******************************************************/
 .second-footer-div ul{
