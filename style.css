@@ -1,3 +1,13 @@
+
+ *
+ {
+     box-sizing: border-box;
+     margin: 0px;
+     padding:0px;
+     font-family: 'Open Sans', sans-serif;
+ 
+ }
+
 /* navbar */
 .navbar
 {
@@ -325,15 +335,8 @@ table.dicClassTable th{
 }
                                                                  /* body */
 
- *
-{
-    box-sizing: border-box;
-    margin: 0px;
-    padding:0px;
-}
 .products
 {
-    font-family: 'Open Sans', sans-serif;
     width:70%;
     
     margin:100px auto;
@@ -430,7 +433,7 @@ a{text-decoration: none;color:black}
  
  .brands-container
  {
-     width:70%;
+     width:74%;
      margin: 40px auto;
      padding: 50px 0px ;
 
@@ -439,10 +442,10 @@ a{text-decoration: none;color:black}
 
  }
 
- .brands-text{    width: 68%;}
-.brands-button
- {  width: 186px;
-    margin-top: 37px;
+ .brand-text{    width: 65%;}
+.brand-button
+ {  
+    margin-top: 50px;
 }
 
 
@@ -463,26 +466,48 @@ a{text-decoration: none;color:black}
 
 
                                           /* offers */
+
 .offers
 {
     margin-top: 50px;
-    width:100%;
+    width:90%;
+    margin:150px  auto;
+    display :flex;
+    justify-content: space-around;
 }
 
 .offers-container
 {
-    width:70%;
-    margin: auto;
+  width:20%;
 }
 
 .special-offer
 {
+
     display: flex;
-    width: 24%;
+    justify-content: space-between;
     padding:20px 0px;
-    border-bottom: 1px solid grey ;
+    border-bottom: 1px solid #e9e9e9; ;
+}
+.money
+{
+  display:block;
+  padding: 11px;
+  color :#d22e2e;
+  font-weight: bolder;
 }
 
+.ph
+{
+  width: 245px;
+  margin-top: 2px;
+}
+
+.ph:hover
+{
+  color :#d22e2e;
+
+}
                                                               
 
 /******************************************************************** footer *******************************************************/
