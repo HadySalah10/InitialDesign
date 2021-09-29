@@ -1,0 +1,562 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700,800,900&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+/* Start Navbar */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  height: 70px;
+  padding: 18px;
+  position: fixed;
+  z-index: 3;
+  background-color: rgb(245, 245, 245);
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+/* navbar list*/
+.navbar-list {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+/* Dropdown span */
+.dropspan {
+  font-size: 25px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content,
+.rightOpened-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a,
+.rightOpened-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Change color of dropdown links on hover */
+.rightOpened-content a:hover {
+  background-color: #ddd;
+}
+
+/* Change color of right Opened links on hover */
+.right-dropdown-content a:hover {
+  display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Show the right dropdown menu on hover */
+.dropdown-content:hover .right-dropdown-content {
+  float: right;
+}
+
+/* Change the background color of the dropdown span when the dropdown content is shown */
+.dropdown:hover .dropspan {
+  text-decoration: overline;
+  text-decoration-color: red;
+}
+/* home sthle */
+.home {
+  margin-left: 400px;
+  text-decoration: overline;
+  text-decoration-color: red;
+}
+.fa-chevron-right {
+  float: right;
+}
+/* End Navbar  */
+
+/* Start page title */
+.pagetitle {
+  height: 100px;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.boxpgtitle {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  height: 100px;
+}
+
+.textpage {
+  width: 55%;
+}
+
+.textpage h1 {
+  font-family: "Nunito", sans-serif;
+
+  margin-bottom: 0;
+  color: #373636;
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 2;
+  text-transform: uppercase;
+}
+/* End page title */
+
+/* Start gallary */
+.gallary {
+  width: 100%;
+  height: 2000px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+.boxgallary {
+  width: 80%;
+  height: 2000px;
+  margin: auto;
+}
+
+/* Strat Box Selection */
+.selection {
+  height: 120px;
+}
+
+.selection .boxselection {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 2px;
+  border: 1px solid #e5e5e5;
+  margin: auto;
+  height: 80px;
+  margin-bottom: 50px;
+}
+
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.shop-options .product-sort {
+  position: relative;
+  margin-right: 30px;
+}
+.shop-options .product-sort span {
+  color: #000;
+  font-family: "ubuntu", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-right: 10px;
+}
+
+.shop-options .product-sort i {
+  position: absolute;
+  font-size: 13px;
+  right: 10px;
+  top: 10px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.shop-options .product-sort select {
+  height: 39px;
+  line-height: 30px;
+  width: 135px;
+  border-radius: 1px;
+  border: 1px solid #e5e5e5;
+  background-color: transparent;
+  color: #999;
+  font-family: open sans, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+option {
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2em;
+}
+
+.shop-options_part2 {
+  float: right;
+  position: relative;
+  bottom: 31px;
+}
+
+.shop-options_part2 span {
+  color: #000;
+  font-family: "ubuntu", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-right: 10px;
+}
+
+.shop-options_part2 a i {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 0;
+  color: #777;
+  font-size: 14px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+.shop-options_part2 a i:hover {
+  color: #d22e2e;
+}
+.shop-options_part2 .active i {
+  color: #d22e2e;
+}
+/* End Box Selection */
+
+/* Start Products */
+.products {
+  height: 517px;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+/* Start Box Product */
+.boxproduct {
+  width: 25%;
+  height: 517px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.boxproduct .product-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.boxproduct .product-img img {
+  display: block;
+  position: relative;
+  transition: all 0.1s linear;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.boxproduct .product-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  left: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.2s ease-in-out;
+}
+
+.boxproduct:hover .product-hover {
+  top: 0;
+}
+
+.boxproduct .product-hover .product-action {
+  width: 100%;
+  position: absolute;
+  bottom: 30px;
+}
+.boxproduct .product-hover a.btn {
+  width: 95px;
+  height: 33px;
+  border-radius: 2px;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+  overflow: hidden;
+  margin-right: 20px;
+  text-transform: capitalize;
+}
+.btn {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  cursor: pointer;
+}
+.btn-primary {
+  background-color: #d22e2e;
+  color: #fff;
+  border: 2px solid #d22e2e;
+  text-align: center;
+}
+
+/* /////////////////// */
+
+.boxproduct .product-bio {
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+
+.boxproduct .product-bio .prodcut-cat a {
+  color: #666;
+  font-family: ubuntu, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  position: relative;
+  text-transform: capitalize;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.boxproduct .product-bio .prodcut-title h3 {
+  margin-bottom: 13px;
+  line-height: 1;
+}
+
+.boxproduct .product-bio .prodcut-title h3 a {
+  color: #373636;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.boxproduct .product-price {
+  color: #d22e2e;
+  font-family: ubuntu, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+}
+/* End Box Product */
+
+/* Start Footer */
+
+.footer {
+  height: 500px;
+  width: 100%;
+  background-color: #ddd;
+  margin-bottom: 0;
+  box-shadow: 0 2px 3px rgb(39 41 48 / 3%);
+  color: #eee;
+  /* display: flex; */
+}
+
+.boxfooter {
+  width: 80%;
+  margin: auto;
+  height: 500px;
+  background-color: rgb(25, 25, 25);
+}
+
+/* .boxfooter .first-footer-div {
+  width: 20%;
+}
+.boxfooter .first-footer-div h3,
+p {
+  margin-bottom: 20px;
+} */
+
+/* ########################################### */
+.footertop {
+  width: 100%;
+  height: 345px;
+  background-color: #191919;
+}
+.footertop div {
+  width: 80%;
+  height: 430px;
+  margin: auto;
+}
+.footertop div h4 {
+  margin: 0px;
+  color: white;
+  float: left;
+  margin-top: 20px;
+}
+.footertop div h6 {
+  margin: 0px;
+  font-family: sans-serif;
+  color: #585858;
+  font-size: 13px;
+  margin-top: 30px;
+  position: relative;
+  top: 22px;
+}
+.footertop div .line1 {
+  width: 1000px;
+  height: 174px;
+  position: relative;
+  top: 60px;
+  margin-bottom: 35px;
+}
+.footertop div .line1 .boxlinksfooter {
+  width: 20%;
+  height: 174px;
+  float: left;
+  margin-right: 20px;
+  margin-left: 0px !important;
+  position: relative;
+  right: 105px;
+}
+.footertop div .line1 .boxlinksfooter h4 {
+  margin: 0px;
+  font-family: sans-serif;
+  font-size: 17px;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.footertop div .line1 .boxlinksfooter p {
+  font-family: sans-serif;
+  font-weight: 400;
+  color: #999999;
+  font-size: 13px;
+  line-height: 25px;
+  float: left;
+  clear: both;
+}
+.footertop div .line1 .boxlinksfooter a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: #999999;
+  font-size: 13px;
+  line-height: 25px;
+  float: left;
+  clear: both;
+}
+.footertop div .line1 .boxlinksfooter a:hover {
+  text-decoration: underline;
+  color: rgb(255, 123, 0);
+}
+.footertop div .line1 {
+  width: 1000px;
+  height: 174px;
+  position: relative;
+  top: 60px;
+  margin-bottom: 25px;
+}
+.footertop div .line1 .boxlinksfooter3 {
+  width: 20%;
+  height: 160px;
+  float: left;
+  margin-right: 10px;
+  margin-left: 0px !important;
+  position: relative;
+  left: 810px;
+  bottom: 173px;
+}
+.footertop div .line1 .boxlinksfooter3 h4 {
+  margin: 0px;
+  font-family: sans-serif;
+  font-size: 15px;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.footertop div .line1 .boxlinksfooter3 a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: #999999;
+  font-size: 13px;
+  line-height: 25px;
+  float: left;
+  clear: both;
+}
+.footertop div .line1 .boxlinksfooter3 a:hover {
+  text-decoration: underline;
+  color: rgb(255, 123, 0);
+}
+
+/*################## ( START FOOTER DOWN ) ############################*/
+
+.footerdown {
+  width: 100%;
+  height: 70px;
+  background-color: #141414;
+}
+.footerdown div {
+  width: 80%;
+  height: 70px;
+  margin: auto;
+}
+.footerdown div .txtfooter {
+  float: left;
+  clear: both;
+  width: 600px;
+  height: inherit;
+}
+.footerdown div .txtfooter h5 {
+  margin: 0px;
+  font-family: sans-serif;
+  font-weight: 400;
+  padding: 8px;
+  color: #999;
+  margin-left: 0px;
+}
+
+.footerdown div .boxicons {
+  width: 240px;
+  height: 39px;
+  float: right;
+  position: relative;
+  top: 10px;
+}
+.footerdown div .boxicons a {
+  text-decoration: none;
+}
+.footerdown div .boxicons img {
+  width: 33px;
+  height: 33px;
+  padding: 5px;
+  border-radius: 4px;
+}
+.footerdown div .boxicons img:hover {
+  width: 30px;
+  height: 29px;
+}
+/*################## ( END FOOTER DOWN ) ############################*/
+
+/* End Footer */
