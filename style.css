@@ -240,8 +240,8 @@ table.dicClassTable th{
 }
 .moveInput{
     position: relative;
-
-    width: 10px;
+    text-align: center;
+    width: 25px;
     left: 116px;    
     bottom: 10px;
 }
@@ -281,7 +281,7 @@ table.dicClassTable th{
   width: 95%;
   height: 40px;
   margin: 15px auto;
-  color: #777;
+  color: #060202;
   border: 1px solid #e5e5e5;
   background-color: #f6f6f6;
 
@@ -295,14 +295,14 @@ table.dicClassTable th{
 .countries{
   width: 50%;
   height: 40px;
-  color: #777;
+  color: #060202;
   border: 1px solid #e5e5e5;
   background-color: #f6f6f6;
 }
 #postalCode{
   width: 45%;
   height: 35px;
-  color: #777;
+  color: #060202;
   border: 1px solid #e5e5e5;
   background-color: #f6f6f6;
   outline: none;
