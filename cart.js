@@ -39,9 +39,7 @@ function increment(id){
     valueIdTotal= document.getElementById('totalAmount');
     valueIdTotal.innerText=tot;
   }
-
-
-
+  
   function sendToCartNvar(idImg,idSalary,idNamePart){
       var img=document.getElementById(idImg);
       var salary =document.getElementById(idSalary);
