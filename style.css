@@ -358,7 +358,7 @@ table.dicClassTable th{
 .cartTolals ul{
   list-style-type: none;
   padding: 5px;
-  color: red;
+  color: #d22e2e;
 }
 .cartTolals ul li{
   margin: 20px;
