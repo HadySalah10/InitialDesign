@@ -104,6 +104,11 @@
     max-width:100% 100%;
     position: relative;
     margin: auto;
+    
+    
+  }
+  .mySlides>img{
+    filter: brightness(0.57);
   }
   
   /* Hide the images by default */
