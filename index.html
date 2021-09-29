@@ -95,38 +95,14 @@
             <div class="dropdown">
                 <i class="fa fa-shopping-cart"></i>
                 <div class="dropdown-content">
-                    <div style ="padding:10px ; background-color: #fff; width:220px;">
-                        <div style ="margin-top:-10px;">
-                            <img src="engine.jpg" style ="width:60px;height:60px;" alt="car engine">
-                            <div style ="display:inline-block;">
-                                <span  style ="font-weight:bold; display:inline-block ; margin-bottom:-20px" >Belt Car Engine</span>
-                                <i style ="float:right; margin-left: 20px; margin-top: 5px;" class="fa fa-window-close"></i>
-                                <p style ="color:gray; ">
-                                    price:$68.00 
-                                    <br>
-                                    quality:2
-                                 </p>
-                             </div>         
-                       </div>
-                       <hr>
-                       <div style ="margin-top:10px;">
-                        <img src="oil.jpg" style ="width:60px;height:60px;" alt="car engine">
-                        <div style ="display:inline-block;">
-                            <span  style ="font-weight:bold; display:inline-block ; margin-bottom:-20px" >Oil Filter</span>
-                            <i style ="float:right; margin-left: 70px; margin-top: 5px;" class="fa fa-window-close"></i>
-                            <p style ="color:gray; ">
-                                price:$68.00 
-                                <br>
-                                quality:2
-                             </p>
-                         </div>         
+                    <div id="divCart" style ="padding:10px ; background-color: #fff; width:220px;">
+                           
                    </div>
                    <hr>
-                   <p style="color:grey"> cart substional: <span class="float:inline-block; margin-left:50px;">316</span></p>
+                   <p style="color:grey"> cart substional: <span id="totalCourt" class="float:inline-block; margin-left:50px;"></span></p>
                    <button style="background-color: red ; width:220px ;color:#fff ; border:none ; font-size: 20px; ">view cart</button>
                    <button style="background-color: black ; margin-top: 10px ;width:220px ;color:#fff ; border:none ; font-size: 20px; ">check cart</button>
                            
-                        
                     </div>  
                 </div>
             </div>
@@ -201,19 +177,15 @@
         <div class="itemOne">
             <div class ="photo">
                 <div class="photo-focus">
-                    <img src="imgs\1--XvVY1F.jpg">
+                    <img  id="img1" src="imgs\1big.jpg">
                 </div>
                 <div class ="photo-hover">
                     <div class="buttons">
                     
-                        <a href="#" class="button">add to cart </a>
+                        <a href="#" onclick="sendToCartNvar('img1','salary1','namePart1')"  class="button">add to cart </a>
                         <a href="#" class="button">item details </a>
                     </div>
                 </div>
-                    
-      
-                
-
             </div>
             
             <div class="product-bio">
@@ -221,11 +193,11 @@
                     <a href="#">Opel</a>
                 </div>
                 <div class="product-title">
-                    <a href="#">Brake Discs</a>
+                    <a id="namePart1" href="#">Brake Discs</a>
                 </div>
                 <div class="product-price">
                     <span class="symbol">$</span>
-                    <span >68</span>
+                    <span id="salary1" >68</span>
                 </div>
 
             </div>
@@ -236,12 +208,12 @@
         <div class="itemOne">
             <div class ="photo">
                 <div class="photo-focus">
-                    <img src="imgs\2--V7DFY9.jpg">
+                    <img id="img2" src="imgs\2big.jpg">
                 </div>
                 <div class ="photo-hover">
                     <div class="buttons">
                     
-                        <a href="#" class="button">add to cart </a>
+                        <a href="#" onclick="sendToCartNvar('img2','salary2','namePart2')" class="button">add to cart </a>
                         <a href="#" class="button">item details </a>
                     </div>
                 </div>
@@ -256,11 +228,11 @@
                     <a href="#">Opel</a>
                 </div>
                 <div class="product-title">
-                    <a href="#">Brake Discs</a>
+                    <a id="namePart2" href="#">Brake Discs</a>
                 </div>
                 <div class="product-price">
                     <span class="symbol">$</span>
-                    <span >500</span>
+                    <span id="salary2" >500</span>
                 </div>
 
             </div>
@@ -271,12 +243,12 @@
         <div class="itemOne">
             <div class ="photo">
                 <div class="photo-focus">
-                    <img src="imgs\4.jpg">
+                    <img id="img3" src="imgs\4big.jpg">
                 </div>
                 <div class ="photo-hover">
                     <div class="buttons">
                     
-                        <a href="#" class="button">add to cart </a>
+                        <a href="#" onclick="sendToCartNvar('img3','salary3','namePart3')" class="button">add to cart </a>
                         <a href="#" class="button">item details </a>
                     </div>
                 </div>
@@ -291,11 +263,11 @@
                     <a href="#">Opel</a>
                 </div>
                 <div class="product-title">
-                    <a href="#">Brake Discs</a>
+                    <a id="namePart3" href="#">Brake Discs</a>
                 </div>
                 <div class="product-price">
                     <span class="symbol">$</span>
-                    <span >56</span>
+                    <span id="salary3" >56</span>
                 </div>
 
             </div>
@@ -306,12 +278,12 @@
         <div class="itemOne">
             <div class ="photo">
                 <div class="photo-focus">
-                    <img src="imgs\5.jpg">
+                    <img id="img4" src="imgs\5big.jpg">
                 </div>
                 <div class ="photo-hover">
                     <div class="buttons">
                     
-                        <a href="#" class="button">add to cart </a>
+                        <a href="#" onclick="sendToCartNvar('img4','salary4','namePart4')" class="button">add to cart </a>
                         <a href="#" class="button">item details </a>
                     </div>
                 </div>
@@ -326,11 +298,11 @@
                     <a href="#">Opel</a>
                 </div>
                 <div class="product-title">
-                    <a href="#">Brake Discs</a>
+                    <a id="namePart4" href="#">Brake Discs</a>
                 </div>
                 <div class="product-price">
                     <span class="symbol">$</span>
-                    <span >124</span>
+                    <span id="salary4">124</span>
                 </div>
 
             </div>
@@ -341,12 +313,12 @@
         <div class="itemOne">
             <div class ="photo">
                 <div class="photo-focus">
-                    <img src="imgs\6.jpg">
+                    <img id="img5" src="imgs\6big.jpg">
                 </div>
                 <div class ="photo-hover">
                     <div class="buttons">
                     
-                        <a href="#" class="button">add to cart </a>
+                        <a href="#" onclick="sendToCartNvar('img5','salary5','namePart5')" class="button">add to cart </a>
                         <a href="#" class="button">item details </a>
                     </div>
                 </div>
@@ -361,11 +333,11 @@
                     <a href="#">Opel</a>
                 </div>
                 <div class="product-title">
-                    <a href="#">Brake Discs</a>
+                    <a id="namePart5" href="#">Brake Discs</a>
                 </div>
                 <div class="product-price">
                     <span class="symbol">$</span>
-                    <span >68</span>
+                    <span id="salary5" >68</span>
                 </div>
 
             </div>
@@ -376,12 +348,12 @@
         <div class="itemOne">
             <div class ="photo">
                 <div class="photo-focus">
-                    <img src="imgs\1--XvVY1F.jpg">
+                    <img id="img6" src="imgs\1big.jpg">
                 </div>
                 <div class ="photo-hover">
                     <div class="buttons">
                     
-                        <a href="#" class="button">add to cart </a>
+                        <a href="#" onclick="sendToCartNvar('img6','salary6','namePart7')" class="button">add to cart </a>
                         <a href="#" class="button">item details </a>
                     </div>
                 </div>
@@ -396,11 +368,11 @@
                     <a href="#">Opel</a>
                 </div>
                 <div class="product-title">
-                    <a href="#">Brake Discs</a>
+                    <a id="namePart6" href="#">Brake Discs</a>
                 </div>
                 <div class="product-price">
                     <span class="symbol">$</span>
-                    <span >68</span>
+                    <span id="salary6">68</span>
                 </div>
 
             </div>
@@ -411,12 +383,12 @@
         <div class="itemOne">
             <div class ="photo">
                 <div class="photo-focus">
-                    <img src="imgs\2--V7DFY9.jpg">
+                    <img  id="img7" src="imgs\2big.jpg">
                 </div>
                 <div class ="photo-hover">
                     <div class="buttons">
                     
-                        <a href="#" class="button">add to cart </a>
+                        <a href="#" onclick="sendToCartNvar('img7','salary7','namePart7')" class="button">add to cart </a>
                         <a href="#" class="button">item details </a>
                     </div>
                 </div>
@@ -431,11 +403,11 @@
                     <a href="#">Opel</a>
                 </div>
                 <div class="product-title">
-                    <a href="#">Brake Discs</a>
+                    <a id="namePart7" href="#">Brake Discs</a>
                 </div>
                 <div class="product-price">
                     <span class="symbol">$</span>
-                    <span >120</span>
+                    <span id="salary7">120</span>
                 </div>
 
             </div>
@@ -446,12 +418,12 @@
         <div class="itemOne">
             <div class ="photo">
                 <div class="photo-focus">
-                    <img src="imgs\6.jpg">
+                    <img id="img8" src="imgs\6big.jpg">
                 </div>
                 <div class ="photo-hover">
                     <div class="buttons">
                     
-                        <a href="#" class="button">add to cart </a>
+                        <a href="#" onclick="sendToCartNvar('img8','salary8','namePart8')" class="button">add to cart </a>
                         <a href="#" class="button">item details </a>
                     </div>
                 </div>
@@ -466,11 +438,11 @@
                     <a href="#">Opel</a>
                 </div>
                 <div class="product-title">
-                    <a href="#">Brake Discs</a>
+                    <a id="namePart8" href="#">Brake Discs</a>
                 </div>
                 <div class="product-price">
                     <span class="symbol">$</span>
-                    <span >321</span>
+                    <span id="salary8">321</span>
                 </div>
 
             </div>
@@ -753,6 +725,6 @@
 <p>Car &reg; shop All Rights Reserved.With Made With Love By <span style="color:red">ITITeam.com</span></p>
 <p  style="margin-top:15px;">Privacy Policy - Terms Of Use - Stores - About Us</p>
 </div> 
-<script src="Logic.js" ></script>
+<script src="cart.js" ></script>
 </body>
 </html>
