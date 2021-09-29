@@ -145,7 +145,7 @@
 
     <div class="TableContainer">
       
-        <table class="dicClassTable" >
+        <table id='myTable' class="dicClassTable" >
             <tr>
               <th>Product</th>
               <th>Price	</th>
@@ -168,19 +168,19 @@
                 </div>
               </td>
         
-              <td class="price" > <div class="moveMoney"> $ <span class="money" id="idPrice">10.00</span></div> </td>
+              <td class="price" > <div class="moveMoney"> $ <span class="money" id="idPrice1">10.00</span></div> </td>
               <td class="quantaty">
-                <a href="#" class="moveMinus"><i class="fa fa-minus"></i></a>
+                <a onclick="dicrement(document.getElementById('moveInput1').id)" class="moveMinus"><i class="fa fa-minus"></i></a>
         
-                  <input type="text" class="moveInput" value="2" id="idQuantaty" readonly="">
-                  <a href="#" class="movePlus"> <i class="fa fa-plus"></i></a>
+                  <input type="text" class="moveInput" id="moveInput1" value="2" id="idQuantaty" readonly="">
+                  <a onclick="increment(document.getElementById('moveInput1').id)" class="movePlus"> <i class="fa fa-plus"></i></a>
                 </td>
                 <td class="total">
-                    <div class="moveMoney">   $ <span class="money" id="idTotal">20.00</span></div>
+                    <div class="moveMoney">   $ <span class="money" id="idTotal1">20.00</span></div>
                 </td>
             </tr>
           
-                
+            <tr>
                 <td class="product">
                     <div class="img">
                         <img src="imgs/2.jpg">
@@ -194,17 +194,45 @@
                   </div>
                 </td>
           
-                <td class="price" > <div class="moveMoney"> $ <span class="money" id="idPrice">40.00</span></div> </td>
+                <td class="price" > <div class="moveMoney"> $ <span class="money" id="idPrice2">40.00</span></div> </td>
                 <td class="quantaty">
-                  <a href="#" class="moveMinus"><i class="fa fa-minus"></i></a>
+                  <a  class="moveMinus" onclick="dicrement(document.getElementById('moveInput2').id)" ><i class="fa fa-minus"></i></a>
           
-                    <input type="text" class="moveInput" value="3" id="idQuantaty" readonly="">
-                    <a href="#" class="movePlus"> <i class="fa fa-plus"></i></a>
+                    <input type="text" class="moveInput" id="moveInput2" value="3" id="idQuantaty" readonly="">
+                    <a  onclick="increment(document.getElementById('moveInput2').id)"  class="movePlus"> <i class="fa fa-plus"></i></a>
                   </td>
                   <td class="total">
-                      <div class="moveMoney">   $ <span class="money" id="idTotal">120.00</span></div>
+                      <div class="moveMoney">   $ <span class="money" id="idTotal2">120.00</span></div>
                   </td>
-              </tr>
+            </tr>
+            <tr>
+                <td class="product">
+                    <div class="img">
+                        <img src="imgs/4 (1).jpg">
+                  </div>
+          
+                  <div class="nameOfObject">
+                      <h6>BRAKE DISCS</h6>
+                  </div>
+                  <div class="deleteRow">
+          
+                  </div>
+                </td>
+          
+                <td class="price" > <div class="moveMoney"> $ <span class="money" id="idPrice3">56.00</span></div> </td>
+                <td class="quantaty">
+                  <a  class="moveMinus" onclick="dicrement(document.getElementById('moveInput3').id)" ><i class="fa fa-minus"></i></a>
+          
+                    <input type="text" class="moveInput" id="moveInput3" value="5" id="idQuantaty" readonly="">
+                    <a  onclick="increment(document.getElementById('moveInput3').id)"  class="movePlus"> <i class="fa fa-plus"></i></a>
+                  </td>
+                  
+
+
+                  <td class="total">
+                      <div class="moveMoney">   $ <span class="money" id="idTotal3">280.00</span></div>
+                  </td>
+            </tr>
           </table>
         </div>
 
@@ -534,7 +562,7 @@
             <ul>
                 <li>
                     Cart Subtotal : 
-                    <span>$ 140.00</span>
+                    <span>$</span><span id="totalAmount">140.00</span>
                 </li>
                 <li>
                     Shipping :
@@ -628,7 +656,7 @@
         <p>Car &reg; shop All Rights Reserved.With Made With Love By <span style="color:red">ITITeam.com</span></p>
         <p  style="margin-top:-10px;">Privacy Policy - Terms Of Use - Stores - About Us</p>
         </div>  
-    
+    <script src="cart.js"></script>
 
 </body>
 </html>
