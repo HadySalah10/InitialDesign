@@ -520,7 +520,29 @@ a{text-decoration: none;color:black}
 .second-footer-div ul{
         list-style: none;
     }
-    
+.footer-container
+{
+  background-color: rgb(17, 17, 17); 
+  width:100%;
+
+}
+     .footer
+    {
+      color: #EEE;
+        display:flex ;
+        padding:50px;
+      justify-content: space-around;
+       width: 80%;
+       margin: auto;
+    }
+    .social-logo {
+      width: 28px;
+      height: 30px;
+      background-color: rgb(94, 94, 94);
+      padding: 8px;
+      margin: 2px;
+  }
+     
 
     
 
