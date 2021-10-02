@@ -528,7 +528,7 @@ a{text-decoration: none;color:black}
 }
 .money
 {
-  display:block;
+  display:inline-block;
   padding: 11px;
   color :#d22e2e;
   font-weight: bolder;
