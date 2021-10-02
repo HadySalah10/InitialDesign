@@ -20,7 +20,7 @@
   height: 70px;
   padding: 18px;
   position: fixed;
-  position: relative;
+  
   top: 0px;
   z-index: 3;
   background-image: url(./imgs/BGNAV_02.gif);
@@ -46,7 +46,7 @@
 /* navbar list*/
 .navbar-list {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .lists {
