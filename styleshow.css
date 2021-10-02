@@ -24,11 +24,23 @@
   background-color: rgb(245, 245, 245);
   width: 100%;
   border-bottom: 1px solid #ddd;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .logo {
+  position: relative;
+  right: 55px;
 }
 /* navbar list*/
 .navbar-list {
   display: inline-block;
   margin-left: 30px;
+}
+
+.lists {
+  position: relative;
+  left: 30px;
 }
 
 /* Dropdown span */
@@ -94,7 +106,7 @@
 }
 /* home sthle */
 .home {
-  margin-left: 400px;
+  /* margin-left: 400px; */
   text-decoration: overline;
   text-decoration-color: red;
 }
@@ -108,6 +120,8 @@
   height: 100px;
   width: 100%;
   margin-bottom: 0;
+  position: relative;
+  top: 79px;
 }
 
 .boxpgtitle {

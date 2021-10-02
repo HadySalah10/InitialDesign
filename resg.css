@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Start Navbar */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  height: 70px;
+  padding: 18px;
+  position: fixed;
+  position: relative;
+  top: 0px;
+  z-index: 3;
+  background-image: url(./imgs/BGNAV_02.gif);
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .logo {
+  position: relative;
+  right: 55px;
+  width: 300px;
+  height: 211px;
+  background-image: url(./imgs/ICAR\ PNG\ WT.png);
+  background-size: cover;
+}
+
+.navbar .logo:hover {
+  background-image: url(./imgs/ICAR\ PNG\ RED.png);
+}
+
+/* navbar list*/
+.navbar-list {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.lists {
+  position: relative;
+  left: 30px;
+}
+
+/* Dropdown span */
+.dropspan {
+  font-size: 25px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.fa-search,
+.fa-shopping-cart {
+  color: #fff;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content,
+.rightOpened-content {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+span {
+  color: #fff;
+}
+/* Links inside the dropdown */
+.dropdown-content a,
+.rightOpened-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Change color of dropdown links on hover */
+.rightOpened-content a:hover {
+  background-color: #000;
+}
+
+/* Change color of right Opened links on hover */
+.right-dropdown-content a:hover {
+  display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Show the right dropdown menu on hover */
+.dropdown-content:hover .right-dropdown-content {
+  float: right;
+}
+
+/* Change the background color of the dropdown span when the dropdown content is shown */
+.dropdown:hover .dropspan {
+  text-decoration: overline;
+  text-decoration-color: red;
+}
+/* home sthle */
+.home {
+  /* margin-left: 400px; */
+  text-decoration: overline;
+  text-decoration-color: red;
+}
+.fa-chevron-right {
+  float: right;
+}
+/* End Navbar  */
+
+/* ////////////////////////////////////////////////////////////////////////// */
+
+.forms {
+  width: 100%;
+  height: 733px;
+  background-image: url(./imgs/slides/carTyresForSlider.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+/* .forms img {
+  object-fit: cover;
+  z-index: 100;
+} */
+
+.forms .wrapper {
+  max-width: 575px;
+  width: 100%;
+  background: #000000ab;
+  margin: 0px auto;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+  padding: 30px;
+  position: relative;
+  top: 45px;
+  border-radius: 5px;
+}
+
+.wrapper .title {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color: #f8730d;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper .form {
+  width: 100%;
+}
+
+.wrapper .form .inputfield {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .form .inputfield label {
+  width: 260px;
+  color: #fff;
+  margin-right: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.wrapper .form .inputfield .input {
+  width: 100%;
+  outline: none;
+  border: 2px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .form .inputfield .custom_select {
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
+
+.wrapper .form .inputfield .custom_select:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.wrapper .form .inputfield .custom_select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+
+.wrapper .form .inputfield .input:focus,
+.wrapper .form .inputfield .textarea:focus,
+.wrapper .form .inputfield .custom_select select:focus {
+  border: 2px solid #fec107;
+}
+
+.wrapper .form .inputfield p {
+  font-size: 14px;
+  color: #fff;
+}
+.wrapper .form .inputfield .check {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.wrapper .form .inputfield .check input[type="checkbox"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.wrapper .form .inputfield .check .checkmark {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #fec107;
+  display: block;
+  position: relative;
+}
+.wrapper .form .inputfield .check .checkmark:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 5px;
+  height: 2px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark {
+  background: #fec107;
+}
+
+.wrapper
+  .form
+  .inputfield
+  .check
+  input[type="checkbox"]:checked
+  ~ .checkmark:before {
+  display: block;
+}
+
+.wrapper .form .inputfield .btn {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 21px;
+  font-weight: 600;
+  border: 0px;
+  background: #f79b16;
+  color: #000;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+}
+
+.wrapper .form .inputfield .btn:hover {
+  background: #ffd658;
+}
+
+.wrapper .form .inputfield:last-child {
+  margin-bottom: 0;
+}
