@@ -298,3 +298,11 @@ span {
 .wrapper .form .inputfield:last-child {
   margin-bottom: 0;
 }
+
+#have-account
+{
+  
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+}
