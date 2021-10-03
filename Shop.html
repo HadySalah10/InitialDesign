@@ -95,15 +95,23 @@
                     </div>       
                 </div>
                 <div class="navbar-list">
+
                     <div class="dropdown">
-                        <a href="cart.html">
                         <i class="fa fa-shopping-cart"></i>
-                    </a>
                         <div class="dropdown-content">
-                            
+            
+                            <div id="divCart" style ="padding:10px ; background-color: #fff; width:220px;">
+                                       
+                            </div>
+                            <hr>
+                            <p style="color:grey"> cart substional: <span id="totalCourt" style="float:inline-block; margin-left:50px;"></span></p>
+                            <button style="background-color: red ; width:220px ;color:#fff ; border:none ; font-size: 20px; ">view cart</button>
+                            <button style="background-color: black ; margin-top: 10px ;width:220px ;color:#fff ; border:none ; font-size: 20px; ">check cart</button>
+                                    
                         </div>
-                    </div> 
+                    </div>
                 </div>
+            
             </div>
             
             <hr> 
@@ -177,10 +185,10 @@
                     <div class="boxproduct">
                         <!-- Start Product Img -->
                         <div class="product-img">
-                            <img src="./imgs/1big.jpg" alt="Product">
+                            <img src="./imgs/1big.jpg" id="img7" alt="Product">
                             <div class="product-hover">
-                                <div class="product-action">
-                                    <a class="btn btn-primary" href="#">Add To Cart</a>
+                                <div class="product-action  buttons">
+                                    <a class="btn btn-primary button"onclick="sendToCartNvar('img7','salary7','namePart7')"  href="#">Add To Cart</a>
                                     <a class="btn btn-primary" href="#">Item Details</a>
                                 </div>
                             </div>
@@ -195,12 +203,12 @@
                             
                             <div class="prodcut-title">
                                 <h3>
-                                    <a href="#">Brake Discs</a>
+                                    <a href="#" id="namePart7">Brake Discs</a>
                                 </h3>
                             </div>
                             
                             <div class="product-price">
-                                <span class="symbole">$</span><span>68.00</span>
+                                <span class="symbole">$</span><span id="salary7">68.00</span>
                             </div>
                         </div>
                         <!-- End Product Text -->
@@ -212,10 +220,10 @@
                     <div class="boxproduct">
                         <!-- Start Product Img -->
                         <div class="product-img">
-                            <img src="./imgs/2big.jpg" alt=Product>
+                            <img src="./imgs/2big.jpg"  id="img8" alt=Product>
                             <div class="product-hover">
                                 <div class="product-action">
-                                    <a class="btn btn-primary" href="#">Add To Cart</a>
+                                    <a class="btn btn-primary button" onclick="sendToCartNvar('img8','salary8','namePart8')"  href="#">Add To Cart</a>
                                     <a class="btn btn-primary" href="#">Item Details</a>
                                 </div>
                             </div>
@@ -230,12 +238,12 @@
                             
                             <div class="prodcut-title">
                                 <h3>
-                                    <a href="#">Oil Filter</a>
+                                    <a href="#" id="namePart8">Oil Filter</a>
                                 </h3>
                             </div>
                             
                             <div class="product-price">
-                                <span class="symbole">$</span><span>40.00</span>
+                                <span class="symbole">$</span><span id="salary8">40.00</span>
                             </div>
                         </div>
                         <!-- End Product Text -->
@@ -682,6 +690,6 @@
         <!---------------------- END FOOTER DOWN --------------------->        
         
     </div>
-    
+    <script src="cart.js" ></script>
 </body>
 </html>
