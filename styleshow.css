@@ -83,6 +83,13 @@
 span {
   color: #fff;
 }
+.symbole{
+  color: red;
+}
+.symbole+span{
+  color: red;
+}
+
 /* Links inside the dropdown */
 .dropdown-content a,
 .rightOpened-content a {
