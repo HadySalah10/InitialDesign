@@ -37,7 +37,10 @@ function increment(id){
         
     }
     valueIdTotal= document.getElementById('totalAmount');
+    var totalCourtAfterShipping=document.getElementById('totalAmountAfterShipping');
+    
     valueIdTotal.innerText=tot;
+    totalCourtAfterShipping.innerText=tot;
   }
   
   function sendToCartNvar(idImg,idSalary,idNamePart){
